@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="方块消消消 - 简单有趣停不下来的游戏">
+  <meta name="author" content="BlocksPlay">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>六角消消拼 - 简单好玩到消除游戏</title>
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="container">
+    <div class="responsive intro-container">
+      <div class="app-icon">
+        <img alt="logoicon" class="logoicon" src="app-icon.png">
+        
+      </div>
+      <p>六角消消拼</p>
+      <div class="intro">
+        <p>简单有趣，根本停不下来</p>
+      </div>
+      <span class="primary-btn app-store-btn" href="#"><i class="iconfont">&#xe61d;</i> 敬请期待</span>
+      <a class="primary-btn play-store-btn" href="#"><i class="iconfont">&#xe682;</i> Android</a>
+    </div>
+    <div class="responsive iphone">
+      <div class="iphone-screenshot">
+        <div class="hexdiv">
+        <img src="hex_demo_opt.gif" class="hex">
+        </div>
+        <div class="in-sc">
+          <img src="app-screenshot.png" class="sc"></img>
+        </div>
+            
+      </div>
+    </div>
+  </header>
+  <footer class="container-foot footer">
+    <div class="sep"></div>
+    <p class="responsive credit">Copyright © 2017 <a href="#"><b>BlocksPlay<b></a></p>
+  </footer>
+  <script>
+  (function() {
+    var ua = navigator.userAgent.toLowerCase();
+    var isWechat = ua.indexOf('micromessenger') != -1;
+    if (isWechat) {
+      var btn = document.getElementsByClassName('app-store-btn')[0];
+      btn.href = '#';
+    }
+  })();
+  </script>
+</body>
+
+</html>
